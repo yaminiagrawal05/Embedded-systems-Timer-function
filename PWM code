@@ -1,0 +1,24 @@
+
+
+#include<avr/io.h>
+#include<util/delay.h>
+#include<util/timer.h>
+#include<util/adc.h>
+void main()
+{ 
+  timer_pwm_init();
+  adc_init();
+  
+ 
+  while(1)
+  { int x=adc_read(0);
+  OCR0=x/4;
+
+
+  /*OCR0=50;
+   _delay_(600);
+    OCR0=100;
+	_delay_ms(600);*/
+	}
+}
+
