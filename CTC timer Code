@@ -1,0 +1,38 @@
+
+
+#include<avr/io.h>
+#include<util/delay.h>
+#include<util/timer.h>
+void main()
+ { 
+  timer_ctc_init();
+  
+  
+ 
+   while(1)
+  { 
+  OCR0=238;
+  
+   _delay_ms(1000);
+    OCR0=211;
+	_delay_ms(1000);
+	OCR0=188;
+  
+   _delay_ms(1000);
+    OCR0=178;
+	_delay_ms(1000);
+	OCR0=158;
+  
+   _delay_ms(1000);
+    OCR0=141;
+	_delay_ms(1000);
+	OCR0=125;
+  
+   _delay_ms(1000);
+   	OCR0=120;
+  
+   _delay_ms(1000);
+    
+	}
+}
+
